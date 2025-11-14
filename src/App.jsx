@@ -1,12 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import './App.css'
-
+import HomePage from './pages/HomePage'
+import ChiSiamo from './pages/ChiSiamo'
+import Prodotti from './pages/Prodotti'
 function App() {
   
 
   return (
     <>
-     <p>dssd</p>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage/>} /> 
+        <Route path='/ChiSiamo' element={<ChiSiamo/>}/>
+        <Route path='/Prodotti' element={<Prodotti/>}/>
+        </Routes>
+     </BrowserRouter>
     </>
   )
 }
