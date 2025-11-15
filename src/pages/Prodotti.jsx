@@ -24,7 +24,7 @@ export default function Prodotti() {
         <>
             <h1>Benvenuto nella sezione prodotti</h1>
 
-     <ul className='list-unstyled d-flex  gap-3'>
+     <ul className='list-unstyled d-flex  gap-3 products-ul'>
     <li className="nav-item">
          <Link className="nav-link " aria-current="page" to="/">Home</Link>
      </li>

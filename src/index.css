@@ -1,6 +1,7 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
 
+/*Css for the Products page*/
 
 img {
   max-width: 100%;
@@ -31,6 +32,22 @@ h1 {
     text-align: center;
 }
 
-ul {
+.products-ul {
     padding-top: 2rem;
+}
+
+/*CSS for the about us page*/
+
+.container-left img {
+    max-width: 100%;
+    height: 500px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+.container-right {
+    padding: 1rem;
 }
