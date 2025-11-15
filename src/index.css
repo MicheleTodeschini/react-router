@@ -1,3 +1,36 @@
 @import url('bootstrap');
 @import url('bootstrap-icons');
 
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  height: 700px;
+  display: flex;
+}
+
+.card-top img {
+  height: 300px;
+}
+
+.card-top {
+    display: flex;
+     justify-content: center;
+}
+
+.description {
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding-top: 2rem;
+}

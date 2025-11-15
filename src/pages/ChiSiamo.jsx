@@ -19,7 +19,7 @@ export default function ChiSiamo() {
      </li>
      </ul>
 
-            <p>I nostri contatti</p>
+            <h2>I nostri contatti </h2>
         </>
     )
 

@@ -40,14 +40,14 @@ export default function Prodotti() {
      
      {
         prodotti.map(prodotto => (
-            <div key={prodotto.id} className='col-4 card'>
+            <div key={prodotto.id} className='col-4 card py-3'>
                 <div className='card-top'>
                     <img src={prodotto.image} alt={prodotto.title} />
                 </div>
                 <div className='card-bottom'>
                     <h3>{prodotto.title}</h3>
-                    <p>{prodotto.price}</p>
-                    <p>{prodotto.description}</p>
+                    <p><strong>{prodotto.price}€</strong></p>
+                    <p className='description'>{prodotto.description}</p>
 
                 </div>
             </div>
