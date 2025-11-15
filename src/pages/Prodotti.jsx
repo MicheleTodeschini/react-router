@@ -9,7 +9,7 @@ export default function Prodotti() {
 
     const url = 'https://fakestoreapi.com/products'
 
-    useEffect() // da fare con la funzione .get dopo
+    useEffect(ottenereProdotti, []) 
 
     function ottenereProdotti(){
         axios
@@ -36,7 +36,26 @@ export default function Prodotti() {
      </li>
      </ul>
      <div className='container'>
+        <div className='row'>
+     
+     {
+        prodotti.map(prodotto => (
+            <div key={prodotto.id} className='col-4 card'>
+                <div className='card-top'>
+                    <img src={prodotto.image} alt={prodotto.title} />
+                </div>
+                <div className='card-bottom'>
+                    <h3>{prodotto.title}</h3>
+                    <p>{prodotto.price}</p>
+                    <p>{prodotto.description}</p>
 
+                </div>
+            </div>
+        ))
+     }
+
+
+     </div>
      </div>
         </>
     )
