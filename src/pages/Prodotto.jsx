@@ -29,7 +29,7 @@ export default function Prodotto() {
 
     return(
         <>
-        <p>vedo prodotto con id ${prodotto.id}</p>
+        <p>vedo prodotto con id {prodotto.id}</p>
             <div>
                  <div key={prodotto.id} className='col-4 card py-3'>
                 <div className='card-top'>

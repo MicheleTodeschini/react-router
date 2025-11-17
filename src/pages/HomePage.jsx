@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Magliette from '../img/magliette.jpg'
 import Zaini from '../img/Zaini.jpg'
 import Gioielli from '../img/gioielli.jpg'
+import Header from '../components/Header'
 
 
 export default function HomePage() {
@@ -10,17 +11,8 @@ export default function HomePage() {
         <>
             <h1>Benvenuto nel nostro nuovo shop!</h1>
 
-     <ul className='list-unstyled d-flex  gap-3'>
-   <li className="nav-item">
-        <Link to='/'>Home</Link>
-     </li>
-      <li className="nav-item ">
-         <Link className="nav-link" aria-current="page" to="/ChiSiamo">Chi Siamo</Link>
-     </li>
-     <li className="nav-item ">
-         <Link className="nav-link" aria-current="page" to="/Prodotti">Prodotti</Link>
-     </li>
-     </ul>
+            <Header/>
+ 
         <div className="jumbotron jumbotron-fluid">
         <div id="carouselExampleFade" className="carousel slide carousel-fade">
     <div className="carousel-inner">
