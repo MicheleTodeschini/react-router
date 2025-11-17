@@ -48,7 +48,7 @@ export default function Prodotti() {
                     <h3>{prodotto.title}</h3>
                     <p><strong>{prodotto.price}€</strong></p>
                     <p className='description'>{prodotto.description}</p>
-                    <Link to={`/pages/${prodotto.id}`}>Visualizza prodotto</Link>
+                    <Link to={`/Prodotto/${prodotto.id}`}>Visualizza prodotto</Link>
                 </div>
             </div>
         ))
