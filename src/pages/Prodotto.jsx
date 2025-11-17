@@ -2,6 +2,8 @@ import axios from "axios";
 import { Link } from 'react-router-dom'
 import { useEffect, useState,  } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 export default function Prodotto() {
@@ -29,7 +31,8 @@ export default function Prodotto() {
 
     return(
         <>
-        <p>vedo prodotto con id {prodotto.id}</p>
+        <h1> Vedo prodotto con id {prodotto.id} </h1>
+        <Header/>
             <div>
                  <div key={prodotto.id} className='col-4 card py-3'>
                 <div className='card-top'>
@@ -43,6 +46,8 @@ export default function Prodotto() {
                 </div>
             </div>
             </div>
+
+             <Footer/>
         </>
     )
 

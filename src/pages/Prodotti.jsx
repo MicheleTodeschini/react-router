@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 
 export default function Prodotti() {
@@ -24,17 +26,7 @@ export default function Prodotti() {
         <>
             <h1>Benvenuto nella sezione prodotti</h1>
 
-     <ul className='list-unstyled d-flex  gap-3 products-ul'>
-    <li className="nav-item">
-         <Link className="nav-link " aria-current="page" to="/">Home</Link>
-     </li>
-      <li className="nav-item ">
-         <Link className="nav-link" aria-current="page" to="/ChiSiamo">Chi Siamo</Link>
-     </li>
-     <li className="nav-item ">
-         <Link className="nav-link" aria-current="page" to="/Prodotti">Prodotti</Link>
-     </li>
-     </ul>
+        <Header/>
      <div className='container'>
         <div className='row'>
      
@@ -57,6 +49,8 @@ export default function Prodotti() {
 
      </div>
      </div>
+
+      <Footer/>
         </>
     )
 
