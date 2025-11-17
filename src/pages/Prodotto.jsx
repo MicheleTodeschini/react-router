@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Link } from 'react-router-dom'
 import { useEffect, useState,  } from "react";
 import { useParams } from "react-router-dom";
 
@@ -19,15 +20,29 @@ export default function Prodotto() {
 
         axios
         .get(urlProdotto)
-        .then(res => setProdotto(res.data))
+        .then(res =>
+            setProdotto(res.data))
+        
            
-    }, []);
+    }, [id]);
 
 
     return(
         <>
         <p>vedo prodotto con id ${prodotto.id}</p>
-        
+            <div>
+                 <div key={prodotto.id} className='col-4 card py-3'>
+                <div className='card-top'>
+                    <img src={prodotto.image} alt={prodotto.title} />
+                </div>
+                <div className='card-bottom'>
+                    <h3>{prodotto.title}</h3>
+                    <p><strong>{prodotto.price}€</strong></p>
+                    <p className='description'>{prodotto.description}</p>
+                    <Link to={`/Prodotti`}>Torna alla lista prodotti</Link>
+                </div>
+            </div>
+            </div>
         </>
     )
 
